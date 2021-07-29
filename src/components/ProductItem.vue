@@ -3,14 +3,13 @@
     class="flex items-center justify-between border border-gray-700 p-4 rounded"
   >
     <div>
-      <span class="font-bold">{{ product.name }}</span> - ${{
-        product.price
-      }}
-      (<span>0</span>)
+      <span class="font-bold">{{ product.name }}</span> - ${{ product.price }}
+      <template v-if="product.quantity">
+        (<span>{{ product.quantity }}</span
+        >)
+      </template>
     </div>
-    <button class="bg-blue-800 p-2 rounded text-sm text-white">
-      Add to Cart
-    </button>
+    <slot></slot>
   </div>
 </template>
 

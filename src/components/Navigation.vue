@@ -4,7 +4,7 @@
       >Products</router-link
     >
     <router-link to="/cart" class="p-2 hover:bg-white hover:text-black rounded"
-      >Cart ({{ cart }})</router-link
+      >Cart ({{ productsInCart }})</router-link
     >
   </div>
 </template>
@@ -15,6 +15,11 @@ export default {
   data: () => ({
     cart: 0,
   }),
+  computed: {
+    productsInCart() {
+      return this.$store.getters.getNoProducts;
+    },
+  },
 };
 </script>
 

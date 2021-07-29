@@ -3,5 +3,5 @@ export function getProducts(state) {
 }
 
 export function getNoProducts(state) {
-  return state.products.length;
+  return state.products.reduce((a, b) => a + b.quantity, 0);
 }
