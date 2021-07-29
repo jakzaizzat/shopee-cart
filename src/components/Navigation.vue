@@ -3,7 +3,10 @@
     <router-link to="/" class="p-2 hover:bg-white hover:text-black rounded mr-4"
       >Products</router-link
     >
-    <router-link to="/cart" class="p-2 hover:bg-white hover:text-black rounded"
+    <router-link
+      to="/cart"
+      data-qa="nav-cart"
+      class="p-2 hover:bg-white hover:text-black rounded"
       >Cart ({{ productsInCart }})</router-link
     >
   </div>
@@ -12,9 +15,6 @@
 <script>
 export default {
   name: "Navigation",
-  data: () => ({
-    cart: 0,
-  }),
   computed: {
     productsInCart() {
       return this.$store.getters.getNoProducts;
