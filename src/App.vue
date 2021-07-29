@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="font-sans">
     <Navigation />
-    <div class="max-w-2xl mx-auto py-16">
+    <div class="max-w-2xl mx-auto py-16 px-4">
       <router-view />
     </div>
   </div>
