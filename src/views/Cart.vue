@@ -1,5 +1,26 @@
 <template>
   <div class="cart">
-    <h1>This is cart page</h1>
+    <div v-if="carts.length > 0">
+      <product-item
+        v-for="product in carts"
+        :key="product.id"
+        :product="product"
+        class="mb-4"
+      />
+    </div>
+    <p v-else class="text-center">No Item in the Cart!</p>
   </div>
 </template>
+<script>
+import ProductItem from "@/components/ProductItem";
+import { products } from "@/data/product";
+export default {
+  components: { ProductItem },
+  data: () => ({
+    carts: [],
+  }),
+  mounted() {
+    this.carts = products;
+  },
+};
+</script>
