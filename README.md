@@ -20,7 +20,30 @@
 * create a Pull Request to this repository
 
 ## Installation
-* `You Installation Guide Here`
+### Install Dependency
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run unit testing
+```
+npm run test
+```
+
+### Run e2e testing
+```
+npm run cypress:open
+```
 
 ## Create Simple Shopping Cart
 Please see the Attached `gif` for the Design
