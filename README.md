@@ -20,52 +20,29 @@
 * create a Pull Request to this repository
 
 ## Installation
-### Install Dependency
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run unit testing
-```
-npm run test
-```
-
-### Run e2e testing
-```
-npm run cypress:open
-```
+* `You Installation Guide Here`
 
 ## Create Simple Shopping Cart
 Please see the Attached `gif` for the Design
 * List all the Products
-    * Product Name,
-    * Description
-    * Price of the Product
+  * Product Name,
+  * Description
+  * Price of the Product
 * On Each Product it should have "Add to Cart" button
 * When i click the "Add to Cart" button it should
-    * Add to Cart List
-    * Increment the quantity of each Product in the Cart List
-    * Increment the number of quantity in the header
+  * Add to Cart List
+  * Increment the quantity of each Product in the Cart List
+  * Increment the number of quantity in the header
 * List all the Products that you added to the Carts
-    * Product Name
-    * Description
-    * Price of the Product
-    * Quantity
+  * Product Name
+  * Description
+  * Price of the Product
+  * Quantity
 * On Each Product in the Cart it should have "Remove from Cart" button
 * When I click the "Remove from Cart" button it should
-    * Decrement number of quantity of the Product
-    * Decrement the total number of quantity in the header
-    * When the quantity of each Product become "0" zero it will remove from list
+  * Decrement number of quantity of the Product
+  * Decrement the total number of quantity in the header
+  * When the quantity of each Product become "0" zero it will remove from list
 
 
 ## Notes
