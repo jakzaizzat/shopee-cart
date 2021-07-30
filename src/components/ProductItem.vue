@@ -1,5 +1,6 @@
 <template>
   <div
+    data-qa="product-item"
     class="flex items-center justify-between border border-gray-700 p-4 rounded"
   >
     <div>
